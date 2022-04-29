@@ -1,0 +1,188 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image:  url(./Image/neon.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: " ";
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 56%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+.content h1{
+    font-weight: normal;
+    letter-spacing: 0.3rem;
+    font-family: sans-serif;
+    font-size: 50px;
+    margin-top: 200px;
+}
+
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    background: #009688;
+    height:100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.button:hover span{
+    width: 100%;
+}
+
+.button:hover{
+    border: none;
+}
+
+.section{
+    display: flex;
+  
+}
+
+.section > div{
+    justify-content: center;
+    display: flex;
+    flex: 50%;
+    padding: 10px;
+    height: 300px;
+    align-items: center;
+}
+
+img{
+    width: 50%;
+    border-radius: 10%;
+}
+
+.text{
+    text-align: center;
+    letter-spacing: 0.2rem;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.image:hover{
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.1); 
+}
+
+.image{
+  transition: transform .2s;
+}
+
+h2{
+    text-decoration: underline;
+    margin-top: 100px;
+    text-align: center;
+}
+
+#aboutUs{
+    background-image:  url(./Image/sectionImg.jpg);
+    color: white;
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+
+strong{
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+
+input[type="text"], input[type="email"]{
+    padding: 10px;
+    margin: 0.2rem;
+}
+
+button{
+    padding: 10px;
+    margin: 0.2rem;
+   
+}
+
+form{
+    border: 1px solid skyblue;
+    width: auto;
+    margin-top: 2.5rem;
+}
